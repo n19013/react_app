@@ -1,14 +1,10 @@
 import React from 'react'
 
 const Hello = props => {
-  const title = '書道'
-  const imgUrl = 'http://uta.pw/shodou/img/28/214.PNG'
   return (
     <div>
-      <h1>{title}</h1>
-      <p>
-        <img src={imgUrl} />
-      </p>
+      <p>探すのに時があり</p>
+      <p>捨てるのに時がある</p>
     </div>
   )
 }
