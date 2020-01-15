@@ -1,22 +1,8 @@
 import React from 'react'
 
 const Hello = props => {
-  const css1 = {
-    color: 'red',
-    'background-color': '#f0f0ff',
-    'font-size': '2em'
-  }
-  const css2 = {
-    color: 'blue',
-    backgroundColor: '#fff0f0',
-    fontSize: '2em'
-  }
-  return (
-    <div>
-      <p style={css1}>探すのに時あり</p>
-      <p style={css2}>捨てるのに時がある</p>
-    </div>
-  )
+  const value = '<<< 豚に真珠、、猫に小判 >>>'
+  return <h2>{value}</h2>
 }
 class App extends React.Component {
   constructor (props) {
