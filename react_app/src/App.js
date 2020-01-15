@@ -1,11 +1,28 @@
 import React, { Component } from 'react'
-import './App.css'
-
 class App extends Component {
+  construdtor (props) {
+    console.log('constructor')
+  }
+
+  shouldComponentUpdate (nextProps, nextState) {
+    console.log('shouldComponentUpdate')
+    return true
+  }
+
+  componentDidUpdate () {
+    console.log('componentDidUpdate')
+  }
+
   render () {
+    console.log('render')
+    const setStateHandler = e => {
+      console.log('* call setState()')
+      this.setState({ r: Math.random() })
+    }
+
     return (
-      <div className='App'>
-        <h2>塔を建てるときは、まず座って費用を計算しよう</h2>
+      <div>
+        <button onClick={setStateHandler}>setState</button>
       </div>
     )
   }
