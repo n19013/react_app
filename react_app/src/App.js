@@ -1,10 +1,9 @@
 import React from 'react'
 
-const Greeting = props => {
-  const r = Math.floor(Math.random() * 3)
-  if (r === 0) return <p>今日もがんばりましょう</p>
-  if (r === 1) return <p>こんにちは</p>
-  if (r === 2) return <p>朗らかな日ですね</p>
+const Hello = props => {
+  const item = 'SDカード'
+  const value = 1200
+  return <h1>{item} - {value}円</h1>
 }
 
 class App extends React.Component {
@@ -16,7 +15,7 @@ class App extends React.Component {
   render () {
     return (
       <div>
-        <Greeting />
+        <Hello />
       </div>
     )
   }
