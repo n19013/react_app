@@ -1,11 +1,17 @@
 import React from 'react'
 
 const Hello = props => {
-  const item = 'SDカード'
-  const value = 1200
-  return <h1>{item} - {value}円</h1>
+  const title = '書道'
+  const imgUrl = 'http://uta.pw/shodou/img/28/214.PNG'
+  return (
+    <div>
+      <h1>{title}</h1>
+      <p>
+        <img src={imgUrl} />
+      </p>
+    </div>
+  )
 }
-
 class App extends React.Component {
   constructor (props) {
     super(props)
